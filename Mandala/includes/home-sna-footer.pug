@@ -1,0 +1,57 @@
+//- Home Footer 
+aside.hoc.topspace-40.outspace-500
+ ul.inline.font-time.outspace-30.nopdstart
+  li
+   .fa.fa-facebook
+   p.inline.bold FACEBOOK
+  li
+   .fa.fa-twitter
+   p.inline.bold TWITTER
+  li
+   .fa.fa-instagram
+   p.inline.bold INSTAGRAM
+  li
+   .fa.fa-google-plus
+   p.inline.bold GOOGLE+
+  li
+   .fa.fa-pinterest
+   p.inline.bold PINTEREST
+  li
+   .fa.fa-linkedin
+   p.inline.bold LINKEDIN
+ ul.nopdstart(style='padding: 0 20px')
+  li.one_third.first.uppercase
+   p.bold.center Về chúng tôi
+   pre(style="color:gray;font-style:italic;") <s>           </s> ///////////// <s>           </s>
+   img.footer-ct1(src="images/logo.png")
+   p.left.bold Giới thiệu chung về mỹ phẩm Handmade Mandala
+   p.left.fontstylenone Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.  
+
+   p.left.color--gray Xem thêm
+  li.one_third.uppercase.center
+   p.bold Blog
+   pre(style="color:gray;font-style:italic;") <s>           </s> ///////////// <s>           </s>
+   img(src="images/2image.png")
+   p.left.footer-ct2 Review son kem Bourjois Velvet
+   hr
+   p.left.fontstylenone Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.   
+   p.left.color--gray.italic Bởi NamTran ( 27 / 05 / 2015 )
+   hr
+   p.left.leftp.inline.color--gray Đọc thêm
+    i(style="border:none; margin-right: 30%").fa.fa-angle-right
+    |23 Bình luận
+  li.one_third.uppercase
+   p.bold.center Gửi Email cho chúng tôi
+   pre(style="color:gray;font-style:italic;") <s>           </s> ///////////// <s>           </s>
+   input.form-control(type="text" placeholder="Email của bạn")
+   p.fontstylenone.center Gửi email để nhận những ưu đãi mới nhất
+   button.btn.btn-dark.btnct Gửi
+   br
+   br
+   p.bold.center TAG sản phẩm
+   pre(style="color:gray;font-style:italic;") <s>           </s> ///////////// <s>           </s>
+    -
+      var list = ["Đồng hồ", "Túi", "Phụ kiện", "Đồng hồ", "Túi", "Giày", "Sandal", "Áo sơ mi", "Nước hoa", "Giày", "Sandal", "Trẻ em", "Thời trang nữ", "Trẻ em", "Thời trang nữ"]
+   each item in list
+        button.btn.btnsp.left= item
+include footer.pug
