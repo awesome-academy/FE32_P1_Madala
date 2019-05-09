@@ -1,64 +1,59 @@
-footer#footer.topspace-30(style="background-color: black; color:white")
- .hoc(style="height: 150px")
-  ul.nopdstart.nospace.font-15(style='padding-left: 20px;')
-   li.one_third.first.bold(style='width:30%') LIÊN HỆ VỚI CHÚNG TÔI
-    ul.nospace.font-style--none.font-size-footer--min1.topspace-10
-     li
-      i.fa.fa-map-marker.active
-      |  Tầng 4 Tòa nhà HaNoi Group Số 442 Đại Cấn, P.Cống Vi, Q.Ba Đình, Hà Nội
-     li
-      p
-       i.fa.fa-phone.active
-       |  (04) 6674 2332  -	<i class="fa fa-fax active"></i>  (04) 3786 8904 
-     li
-      p
-       i.fa.fa-phone.active
-       |  (08) 6680 9686  &nbsp <i class="fa fa-envelope active"></i><em><a href="mailto:Support@bizweb.vn"> Support@bizweb.vn</a></em>
-   li.one_third
-    ul.nospace
-     li.one_half.bold.font-15.first CHUYỂN HÀNG
-      ul.nospace.font-style--none.font-size-footer--min2.topspace-10
-       li
-        a(href="#") Mua sắm trực tuyến
-       li
-        a(href="#") Đến từ chúng tôi gửi đến
-       li
-        a(href="#") Chính sách vận chuyển
-       li
-        a(href="#") Vận chuyển thông tin
-     li.one_half.bold.mrsp HỖ TRỢ
-      ul.nospace.font-style--none.font-size-footer--min2.topspace-10
-       li
-        a(href="#") Câu chuyện của chúng ta
-       li
-        a(href="#") Thanh toán an toàn
-       li
-        a(href="#") Tùy chọn vận chuyển 
-       li
-        a(href="#") Chính sách vận chuyển
-   li.one_third
-    ul.nospace
-     li.one_half.bold.first THÔNG TIN
-      ul.nospace.font-style--none.font-size-footer--min2.topspace-10
-       li
-        a(href="#") Về chúng tôi
-       li
-        a(href="#") Điều khoản và điều kiện
-       li
-        a(href="#") Chính sách riêng tư
-       li
-        a(href="#") Đơn đặt hàng và Returns
-     li.one_half.bold.mrsp MY ACCOUNT
-      ul.nospace.font-style--none.font-size-footer--min2.topspace-10
-       li
-        a(href="#") Xem giỏ hàng
-       li
-        a(href="#") Sản phẩm yêu thích
-       li
-        a(href="#") Kiểm tra
-       li
-        a(href="#") Theo dõi đơn đặt hàng của tôi
- hr.hrfooter
- .hoc(style='padding:0 40px;')
-  #copyright.inline @Copyright 2008-2014 DKT Technology JSC
-  img.inline.fl_right(src="images/visa.png")
+footer#footer.topspace-30.container.mw-100.pt-4(style="background-color: black; color:white")
+  .hoc.no--hoc
+        ul.font-15.row.list-unstyled
+          li.col-sm-4.col-md-4.col-lg-4.col-xl-4.bold.hr-bot
+            | LIÊN HỆ VỚI CHÚNG TÔI
+            ul.nospace.font-style--none.font-size-footer--min1.topspace-10.color--404040
+              li
+                i.fa.fa-map-marker.active
+                |  Tầng 4 Tòa nhà HaNoi Group Số 442 Đại Cấn, P.Cống Vi, Q.Ba Đình, Hà Nội
+              li
+                p.mb-0
+                  i.fa.fa-phone.active
+                  |  (04) 6674 2332 - 
+                  i.fa.fa-fax.active
+                  |  (04) 3786 8904
+              li
+                p
+                  i.fa.fa-phone.active
+                  |  (08) 6680 9686   
+                  i.fa.fa-envelope.active
+                  em
+                    a(href='mailto:Support@bizweb.vn')  Support@bizweb.vn
+          li.col-sm-4.col-md-4.col-lg-4.col-xl-4
+            ul.nospace.row
+              li.bold.font-15.col-sm-6.col-md-6.col-lg-6.col-xl-6.p-0.hr-bot
+                | CHUYỂN HÀNG
+                ul.nospace.font-style--none.font-size-footer--min2.topspace-10
+                  - var list = ["Mua sắm trực tuyến", "Đến từ chúng tôi gửi đến", "Chính sách vận chuyển", "Vận chuyển thông tin"];
+                    each item in list
+                      li.fix-footer
+                        a(href="#")= item
+              li.bold.col-sm-6.col-md-6.col-lg-6.col-xl-6.p-0.hr-bot
+                | HỖ TRỢ
+                ul.nospace.font-style--none.font-size-footer--min2.topspace-10
+                  - var list = ["Câu chuyện của chúng ta", "Thanh toán an toàn", "Tùy chọn vận chuyển", "Chính sách vận chuyển"];
+                  each item in list
+                    li.fix-footer
+                      a(href="#")= item
+          li.col-sm-4.col-md-4.col-lg-4.col-xl-4
+            ul.nospace.row
+              li.bold.col-sm-6.col-md-6.col-lg-6.col-xl-6.p-0.hr-bot
+                | THÔNG TIN
+                ul.nospace.font-style--none.font-size-footer--min2.topspace-10
+                  - var list = ["Về chúng tôi", "Điều khoản và điều kiện", "Chính sách riêng tư", "Đơn đặt hàng và return"];
+                  each item in list
+                    li.fix-footer
+                      a(href="#")= item
+              li.bold.col-sm-6.col-md-6.col-lg-6.col-xl-6.p-0
+                | MY ACCOUNT
+                ul.nospace.font-style--none.font-size-footer--min2.topspace-10
+                  - var list = ["Xem giỏ hàng", "Sản phẩm yêu thích", "Kiểm tra", "Theo dõi đơn đặt hàng"];
+                  each item in list
+                    .fix-footer
+                      a(href="#")= item
+        hr.hrfooter
+        .row
+          #copyright.inline.col-sm-6.col-md-6.col-lg-6.col-xl-6.color--404040 @Copyright 2008-2014 DKT Technology JSC
+          .inline.col-sm-6.col-md-6.col-lg-6.col-xl-6.footer-visa
+            img.footer-visa(src='images/visa.png')

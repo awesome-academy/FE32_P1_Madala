@@ -1,92 +1,93 @@
 //- Heading page
-.headcolor
- img.bigbanner(src='images/headbanner2.png' alt='headbanner2') 
- header#header
-   .logo.fl_left
-    a(href="#")
-     img(src='images/logo.png', alt='logo')
-   nav.uppercase.inline
-    ul.clear.center
-     li
-      a(href="#") Trang chủ
-     li
-      a(href="#") Giới thiệu
-     li.triggermenu
-      a(href="#").active Sản phẩm 
-       i.fa.fa-angle-down
-      .arrowmenu
-      ul.menu1
-       li.one_third.first.left.font-size--min DƯỠNG DA
-        hr.hrblock
-        ul.thirdmenu1
-         li Áo khoác
-         li.active Bộ áo liền quần
-         li Dresses
-         li Quần / Váy
-         li Quần short
-         li Quần Jean
-         li Đồ đan
-         li Áo nỉ
-       li.one_third.left.font-size--min.fixmenu1 NƯỚC HOA
-        hr.hrblock
-        ul.thirdmenu1
-         li Áo cánh/ Áo sơ mi
-         li Túi xách & Balô
-         li Khăn quàng cổ và Foulards
-         li Dệt kim Hát & Gloves
-         li Vớ & Socks
-         li Jewerly
-         li Bị bảo vệ
-         li Giày
-       li.one_third.left.font-size--min.fixmenu1 TRANG SỨC
-        hr.hrblock
-        ul.thirdmenu1
-         li Áo cánh/ Áo sơ mi
-         li Túi xách & Balô
-         li Khăn quàng cổ và Foulards
-         li Dệt kim Hát & Gloves
-         li Vớ & Socks
-         li Jewerly
-         li Bị bảo vệ
-         li Giày
-     li
-      a(href="#") Tin tức
-     li
-      a(href="#") Bản đồ
-     li
-      a(href="#") Liên hệ
-   nav.fl_right.inline
-    ul.clear 
-     li.triggermenu
-      a(href="#") 
-       i.fa.fa-shopping-cart
-      .menu2
-       ul.font-size--min.menu2-ct
-        li.outspace-10
-         img.inline.img-menu2(src="images/item-menu.png")
-         .ct-item.inline
-          p.text-menu2 Áo sơ mi nam
-          p.italic.active 120.000
-           sup đ
-         .ct-item
-          button.btn.btn-close.fa.fa-times
-        li.outspace-10
-         img.inline.img-menu2(src="images/item-menu.png")
-         .ct-item.inline
-          p.text-menu2 Áo sơ mi nam
-          p.italic.active 120.000
-           sup đ
-         .ct-item
-          button.btn.btn-close.fa.fa-times
-        li.hrblock
-         hr.hrblock
-        li.hrblock
-         p Tổng số
-         p.inline.fl_right.italic.active 240.000
-          sup đ
-        li.hrblock
-         button.btn.btn-dark Giỏ hàng
-      .arrowmenu(style='margin-left:-15px')
-     li.mr-left20
-      a(href="#") 
-       i.fa.fa-search
+.borderbottom
+    img.bigbanner.clear.see(src='images/headbanner2.png', alt='headbanner2')
+    header#header
+      .hoc.inspace-10
+        .logo.fl_left
+          a(href='#')
+            img(src='images/logo.png', alt='logo')
+        nav.uppercase.inline
+          ul.clear.center
+            li
+              a(href='#') Trang chủ
+            li
+              a(href='#') Giới thiệu
+            li.triggermenu
+              a(href='#')
+                | Sản phẩm 
+                i.fa.fa-angle-down
+              .arrowmenu
+              ul.menu1
+                li.one_third.first.left.font-size--min
+                  | DƯỠNG DA
+                  hr.hrblock
+                  ul.thirdmenu1
+                    - var list = ["Áo khoác", "Bộ áo liền quần", "Dresses", "Quần/Váy","Quần short", "Quần jean", "Đồ đan", "Áo nỉ"];
+                      each item in list
+                        li
+                          a(href="#")= item
+                li.one_third.left.font-size--min.fixmenu1
+                  | NƯỚC HOA
+                  hr.hrblock
+                  ul.thirdmenu1
+                    - var list = ["Áo cánh", "Túi xách & Balô", "Khăn quàng cổ và Foulards", "Dệt kim Hats & Gloves","Vớ & Socks", "Jewerly", "Bị bảo vệ", "Giày"];
+                      each item in list
+                        li
+                          a(href="#")= item
+                li.one_third.left.font-size--min.fixmenu1
+                  | TRANG SỨC
+                  hr.hrblock
+                  ul.thirdmenu1
+                    - var list = ["Áo cánh", "Túi xách & Balô", "Khăn quàng cổ và Foulards", "Dệt kim Hats & Gloves","Vớ & Socks", "Jewerly", "Bị bảo vệ", "Giày"];
+                      each item in list
+                        li
+                          a(href="#")= item
+            li
+              a(href='#') Tin tức
+            li
+              a(href='#') Bản đồ
+            li
+              a(href='#') Liên hệ
+        nav.fl_right.inline
+          ul.inline
+            li.triggermenu
+              a(href='#')
+                i.fa.fa-shopping-cart
+              .menu2
+                ul.font-size--min.menu2-ct
+                  li.outspace-10
+                    img.inline.img-menu2(src='images/item-menu.png')
+                    .ct-item.inline
+                      p.text-menu2 Áo sơ mi nam
+                      p.italic.active
+                        | 120.000
+                        sup đ
+                    .ct-item
+                      button.close(arial-label='Close')
+                        span(aria-hidden='true') &times;
+                  li.outspace-10
+                    img.inline.img-menu2(src='images/item-menu.png')
+                    .ct-item.inline
+                      p.text-menu2 Áo sơ mi nam
+                      p.italic.active
+                        | 120.000
+                        sup đ
+                    .ct-item
+                      button.close(arial-label='Close')
+                        span(aria-hidden='true') &times;
+                  li.hrblock
+                    hr.hrblock
+                  li.hrblock
+                    p Tổng số
+                    p.inline.fl_right.italic.active
+                      | 240.000
+                      sup đ
+                  li.hrblock
+                    button.btn.btn-dark Giỏ hàng
+              .arrowmenu(style='margin-left:-15px')
+            li.mr-left20
+              a(href='#')
+                i.fa.fa-search
+            li.barmenu
+              a(href='#')
+                i.fa.fa-bars

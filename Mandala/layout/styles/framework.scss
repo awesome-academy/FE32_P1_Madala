@@ -1,12 +1,10 @@
 @charset "utf-8";
-@import url("Bootstrap/bootstrap.css");
+@import url("bootstrap/css/bootstrap.min.css");
 
 html {
-  overflow-y: scroll;
-  overflow-x: scroll;
   margin: 0;
   padding: 0;
-  font-size: 2px;
+  font-size: ;
 }
 
 
@@ -104,12 +102,6 @@ html {
   background-clip: padding-box;
 }
 
-.btn {
-  display: inline-block;
-  padding: 8px 18px 10px;
-  text-transform: uppercase;
-  border: 1px solid;
-}
 
 .icon.fa {
   display: inline-block;
@@ -148,9 +140,6 @@ html {
   overflow: hidden;
 }
 
-.clear, .group {
-  display: block;
-}
 
 .clear {
   &::before, &::after {
@@ -187,7 +176,14 @@ a {
 .fl_right {
   float: right;
 }
-
+.hr__dotted{
+  border-top: 1px dotted #c1c1c1;
+  width:100%;
+}
+.hr__solid{
+  border-top: 1px solid #c1c1c1;
+  width:80%;
+}
 img {
   width: auto;
   max-width: 100%;
@@ -207,7 +203,7 @@ body, input, textarea, select {
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
-  font-family: Georgia, Times New Roman, Times, serif;
+  font-family: Times New Roman, Times, serif, Georgia;
 }
 
 .roboto{
@@ -255,13 +251,19 @@ label {
   outline: none;
   box-shadow: none;
 }
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px 0;
-  font-size: 22px;
+  margin: 0 0 5px 0;
   line-height: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -352,6 +354,9 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
 
 /* Spacing
 -------------------------------------------------------------------------------------------------------------- */
+.outspace-5{
+  margin-bottom: 5px;
+}
 
 .outspace-10 {
   margin-bottom: 10px;
@@ -360,11 +365,21 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
 .outspace-15 {
   margin-bottom: 15px;
 }
-
+.outspace-20{
+  margin-bottom: 20px;
+}
+.outspace-25{
+  margin-bottom: 25px;
+}
+.outspace-29{
+  margin-bottom: 29px;
+}
 .outspace-30 {
   margin-bottom: 30px;
 }
-
+.outspace-40{
+  margin-bottom: 40px;
+}
 .outspace-50 {
   margin-bottom: 50px;
 }
@@ -416,14 +431,28 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
 .color--36D68C {
   color: #36D68C;
 }
+.color--black{
+  color: black;
+}
+.color--404040{
+  color: #404040;
+}
+
 .color--white{
   color: white;
 }
 .color--gray{
   color: gray;
 }
-
-
+.color--red{
+  color: red;
+}
+.color--blue{
+  color: blue;
+}
+.color--red{
+  color: red;
+}
 .mr-left10{
   margin-left: 10px;
 }
@@ -465,6 +494,10 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
   font-size: 15px;
 }
 
+.font-25{
+  font-size: 25px;
+}
+
 .font-30{
   font-size: 30px;
 }
@@ -480,9 +513,14 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
 .topspace-10{
   margin-top: 10px;
 }
-
+.topspace-15{
+  margin-top: 15px;
+}
 .topspace-20{
   margin-top: 20px;
+}
+.topspace-25{
+  margin-top: 25px;
 }
 
 .topspace-30{
@@ -491,7 +529,9 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
 .topspace-40{
   margin-top: 40px;
 }
-
+.topspace-50{
+  margin-top: 50px;
+}
 .verticalmid{
   vertical-align: middle;
 }
@@ -500,7 +540,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
   text-decoration: underline;
 }
 
-.pstrelative{
+.pst--relative{
   position: relative;
 }
 
@@ -518,22 +558,22 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section 
   width: 0; 
   height: 0; 
   border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #789629;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #789629;
 }
 %leftarrow{
   position: absolute;
   width: 0; 
   height: 0; 
   border-top: 20px solid transparent;
-    border-right: 20px solid #e3ce33;
-    border-bottom: 20px solid transparent;
+  border-right: 20px solid #e3ce33;
+  border-bottom: 20px solid transparent;
 }
 %rightarrow{
   position: absolute;
   width: 0; 
   height: 0; 
   border-top: 20px solid transparent;
-    border-left: 20px solid #e3ce33;
-    border-bottom: 20px solid transparent;
+  border-left: 20px solid #e3ce33;
+  border-bottom: 20px solid transparent;
 }
