@@ -47,7 +47,7 @@ header{
 		visibility: hidden;
 		position: absolute;
 		width: 470px;
-		height: 195px;
+		height: auto;
 		z-index: 1;
 		margin-left: -210px;
 		background-color: white;
@@ -61,36 +61,37 @@ header{
 	.fixmenu1{
 		margin-top: -2px;
 	}
-	
-	
 	.hrblock{
 		display: block;
 	}
-
+	
 	.menu2{
-		visibility: hidden;
 		position: absolute;
-		width: 140px;
-		height: 195px;
+		width: 220px;
+		height: auto;
 		z-index: 1;
 		margin-top: 10px;
 		margin-left: -35px;
 		background-color: white;
 		border: 1px solid #789629;
 		@extend .nopdstart;
-
 		.menu2-ct{
-			margin: 0;
 			@extend .nopdstart;
 
+			.li-menu2{
+				margin-bottom: 15px; 
+			}
 			.btn-close{
 				border: none;
 				padding: 0;
 			}
 
 			.img-menu2{
-				width: 45px;
-				height: auto;
+				height: 70px;
+				width: 70px;
+				background-position: center center;
+				background-repeat: no-repeat;
+			    background-size: cover;
 			}
 
 			.text-menu2{
@@ -101,12 +102,14 @@ header{
 			.ct-item{
 				vertical-align: top;
 			}
+			.inline *:last-child{
+				margin-right: none;
+			}
 		}
 	}
 	.triggermenu:hover {
 		.menu1 {visibility: visible;}
 		.arrowmenu {visibility: visible;}
-		.menu2 {visibility: visible;}
 	}
 	%thirdmenu{
 		display: inline-block;
@@ -196,6 +199,15 @@ header{
 
 	
 }
+.modal-content{
+	background-image: url("./../../images/newsletter-layout.png");
+	background-position-x: -50px;
+    background-position-y: -150px;
+    border-radius: 50%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
 
 .active{color:#789629;}
 
@@ -203,9 +215,6 @@ header{
 	display: block;
 }
 
-.btn-close{
-	
-}
 // Info page
 .flex{
 	display: flex;
@@ -441,8 +450,7 @@ section{
 	margin: 0 41%;
 }
 .item-height{
-	height: 150px;
-	width: auto;
+	max-width: auto;
 }
 .blur{
 	opacity: 0.4;
@@ -630,8 +638,21 @@ hr.hrfooter { display: block; height: 1px;
 	padding-left: 20px; 
 }
 
+.gird__button{
+	border: none;
+	background-color: none;
+}
+.gird-item__image{
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.typeButton__deactive{
+	opacity: .4;
+}
+
 @import "scss/Detail";
 @import "scss/Cart";
 @import 'scss/Account';
 @import 'scss/Blog';
 @import 'responsive';
+@import 'scss/Payment';
