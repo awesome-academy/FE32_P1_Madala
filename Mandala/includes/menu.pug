@@ -8,11 +8,11 @@
         nav.uppercase.inline
           ul.clear.center
             li
-              a(href='#') Trang chủ
+              a(href='./Home.html') Trang chủ
             li
-              a(href='#') Giới thiệu
+              a(href='./About-Us.html') Giới thiệu
             li.triggermenu
-              a(href='#')
+              a(href='./Product.html')
                 | Sản phẩm 
                 i.fa.fa-angle-down
               .arrowmenu
@@ -42,45 +42,26 @@
                         li
                           a(href="#")= item
             li
-              a(href='#') Tin tức
+              a(href='./Blog.html') Tin tức
             li
-              a(href='#') Bản đồ
+              a(href='./Contact.html') Bản đồ
             li
-              a(href='#') Liên hệ
+              a(href='./404.html') Liên hệ
         nav.fl_right.inline
           ul.inline
-            li.triggermenu
-              a(href='#')
-                i.fa.fa-shopping-cart
-              .menu2
-                ul.font-size--min.menu2-ct
-                  li.outspace-10
-                    img.inline.img-menu2(src='images/item-menu.png')
-                    .ct-item.inline
-                      p.text-menu2 Áo sơ mi nam
-                      p.italic.active
-                        | 120.000
-                        sup đ
-                    .ct-item
-                      button.btn.btn-close.fa.fa-times
-                  li.outspace-10
-                    img.inline.img-menu2(src='images/item-menu.png')
-                    .ct-item.inline
-                      p.text-menu2 Áo sơ mi nam
-                      p.italic.active
-                        | 120.000
-                        sup đ
-                    .ct-item
-                      button.btn.btn-close.fa.fa-times
-                  li.hrblock
+            li
+              a#cart(href='#')
+                i.fa.fa-shopping-cart.show-amount-item
+              .menu2(style="display: none;")
+                ul.ml-4.menu2-ct.container.cart__item--sub
+                ul.ml-3.container.p-0
+                  .hrblock
                     hr.hrblock
-                  li.hrblock
+                  .hrblock
                     p Tổng số
-                    p.inline.fl_right.italic.active
-                      | 240.000
-                      sup đ
-                  li.hrblock
-                    button.btn.btn-dark Giỏ hàng
+                    p.inline.fl_right.italic.active.pr-4.mr-3.total--price
+                  .hrblock
+                    button.btn.btn-dark.btn--payment Giỏ hàng
               .arrowmenu(style='margin-left:-15px')
             li.mr-left20
               a(href='#')

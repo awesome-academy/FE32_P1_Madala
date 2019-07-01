@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Madanla - Contact</title>
+    <title>Mandala - Contact</title>
     <link rel="icon" href="images/Madala.ico">
     <link rel="stylesheet" href="layout/styles/bootstrap/css/bootstrap.min.css">
     <link href="layout/styles/layout.css" rel="stylesheet" type="text/css">
@@ -15,9 +15,9 @@
           <div class="logo fl_left"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
           <nav class="uppercase inline">
             <ul class="clear center">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Giới thiệu</a></li>
-              <li class="triggermenu"><a href="#">Sản phẩm <i class="fa fa-angle-down"></i></a>
+              <li><a href="./Home.html">Trang chủ</a></li>
+              <li><a href="./About-Us.html">Giới thiệu</a></li>
+              <li class="triggermenu"><a href="./Product.html">Sản phẩm <i class="fa fa-angle-down"></i></a>
                 <div class="arrowmenu"></div>
                 <ul class="menu1">
                   <li class="one_third first left font-size--min">DƯỠNG DA
@@ -61,44 +61,27 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="#">Tin tức</a></li>
-              <li><a href="#">Bản đồ</a></li>
-              <li><a href="#">Liên hệ</a></li>
+              <li><a href="./Blog.html">Tin tức</a></li>
+              <li><a href="./Contact.html">Bản đồ</a></li>
+              <li><a href="./404.html">Liên hệ</a></li>
             </ul>
           </nav>
           <nav class="fl_right inline">
             <ul class="inline">
-              <li class="triggermenu"><a href="#"><i class="fa fa-shopping-cart"></i></a>
-                <div class="menu2">
-                  <ul class="font-size--min menu2-ct">
-                    <li class="outspace-10"><img class="inline img-menu2" src="images/item-menu.png">
-                      <div class="ct-item inline">
-                        <p class="text-menu2">Áo sơ mi nam</p>
-                        <p class="italic active">120.000<sup>đ</sup></p>
-                      </div>
-                      <div class="ct-item">
-                        <button class="btn btn-close fa fa-times"></button>
-                      </div>
-                    </li>
-                    <li class="outspace-10"><img class="inline img-menu2" src="images/item-menu.png">
-                      <div class="ct-item inline">
-                        <p class="text-menu2">Áo sơ mi nam</p>
-                        <p class="italic active">120.000<sup>đ</sup></p>
-                      </div>
-                      <div class="ct-item">
-                        <button class="btn btn-close fa fa-times"></button>
-                      </div>
-                    </li>
-                    <li class="hrblock">
+              <li><a id="cart" href="#"><i class="fa fa-shopping-cart show-amount-item"></i></a>
+                <div class="menu2" style="display: none;">
+                  <ul class="ml-4 menu2-ct container cart__item--sub"></ul>
+                  <ul class="ml-3 container p-0">
+                    <div class="hrblock">
                       <hr class="hrblock">
-                    </li>
-                    <li class="hrblock">
+                    </div>
+                    <div class="hrblock">
                       <p>Tổng số</p>
-                      <p class="inline fl_right italic active">240.000<sup>đ</sup></p>
-                    </li>
-                    <li class="hrblock">
-                      <button class="btn btn-dark">Giỏ hàng</button>
-                    </li>
+                      <p class="inline fl_right italic active pr-4 mr-3 total--price"></p>
+                    </div>
+                    <div class="hrblock">
+                      <button class="btn btn-dark btn--payment">Giỏ hàng</button>
+                    </div>
                   </ul>
                 </div>
                 <div class="arrowmenu" style="margin-left:-15px"></div>

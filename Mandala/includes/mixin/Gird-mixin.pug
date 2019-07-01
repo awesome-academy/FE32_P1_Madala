@@ -1,15 +1,22 @@
 mixin gird-direct-icon
       .outspace-29.respon--topspace-30
         h6.float-left 
-          i.fa.fa-th-large
-          |  
-          i.fa.fa-th-list
+          button#gird__grid.d-inline.btn.btn-light
+            i.fa.fa-th-large
+            |  
+          button#gird__list.d-inline.btn.btn-light.typeButton__deactive
+            i.fa.fa-th-list
         h6.float-right
-          i.fa.fa-caret-left
-          b  1
-          |  2 
-          |  3  
-          i.fa.fa-caret-right
+          button#gird__btn-left.d-inline.btn.btn-light
+            i.fa.fa-caret-left
+          button.d-inline.btn.btn-light
+            b  1
+          button.d-inline.btn.btn-light
+            |  2
+          button.d-inline.btn.btn-light
+            |  3  
+          button#gird__btn-right.d-inline.btn.btn-light
+            i.fa.fa-caret-right
 mixin gird-items
       .row.list-unstyled.respon--topspace-30
         li.mt-4.mr-0.ml-0.p-0.center.triggeritem.col-6.col-md-4.col-lg-4

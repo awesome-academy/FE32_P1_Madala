@@ -8,6 +8,8 @@
       th.col-lg-2 SỐ LƯỢNG
       th.col-lg-2 TỔNG SỐ
       th.col-lg-1 XÓA
+  table.table__cart.container.text-center
+  table.total__shopping--price.text-center(style="margin: 0px auto;")
     mixin Cart-table__item(img,index,index2)
       tr.row.p-0(style="margin: 0px auto;")
         td.cart--table__space.col-lg-2
@@ -23,12 +25,10 @@
         td.cart--table__space.col-lg-1
           a(href='#')
             i.fa.fa-trash-o
-    +Cart-table__item('images/hand1.png',345,1)
-    +Cart-table__item('images/hand1.png',345,2)
 .container.hoc.p-0
   .row
-    .col-lg-6
-    .col-lg-6.topspace-30.cart-button.text-right
-      button.btn.btn-dark.cart-button__1 TIẾP TỤC MUA HÀNG
-      button.btn.btn-dark.cart-button__2 XÓA
-      button.btn.btn-dark.cart-button__2 CẬP NHẬT
+    .col-lg-12.topspace-30.cart-button.text-right
+      button.btn.btn-dark.cart-button__buy TIẾP TỤC MUA HÀNG
+      button.btn.btn-dark.cart-button__2 XÓA TẤT CẢ
+      button.btn.btn-dark.cart-button__3 CẬP NHẬT
+      button.btn.btn-dark.cart-button__4 THANH TOÁN
